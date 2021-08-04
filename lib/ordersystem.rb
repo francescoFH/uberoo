@@ -21,8 +21,7 @@ class OrderSystem
 
     fail "This isn't on the order" if in_order? dish
 
-    order.delete_if { |has| hash[:dish] == dish }
-
+    order.delete_if { |hash| hash[:dish] == dish }
   end
 
   def view_order
