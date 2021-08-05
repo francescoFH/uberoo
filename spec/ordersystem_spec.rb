@@ -28,6 +28,10 @@ describe OrderSystem do
       subject.add_to_order dish
       expect(subject.order.count).to eq 1
     end
+
+    it 'only allows menu items to be added' do
+      expect { subject.add_to_order "fake dish" }.to raise_error "This isn't on the menu"
+    end
   end
 
   describe '#remove_from_order' do
@@ -65,7 +69,7 @@ describe OrderSystem do
     it 'returns the correct total' do
       subject.order << option_one
       subject.order << option_two
-      expect(subject.view_total).to eq 8
+      expect(subject.view_total).to eq "£#{8}"
     end
   end
 
