@@ -106,6 +106,11 @@ Traceback (most recent call last):
 RuntimeError (This isn't on the menu)
 ```
 
+To Implement
+------------------
+* Improve test coverage for Text Class.
+* Implement the ability to place orders via text message.
+
 Tech Stack
 ------------------
 Ruby 2.7.0  
