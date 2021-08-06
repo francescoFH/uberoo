@@ -85,7 +85,8 @@ Proceeding to purchase the order:
 Happy to proceed with order (y/n) ?
 y
 ```
-![screenshot](./images/twilio_text.png)
+
+<img src="https://github.com/francescoFH/uberoo/blob/main/images/twilio_text.png" width="90">
 
 **Errors:**
 
