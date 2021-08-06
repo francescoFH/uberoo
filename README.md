@@ -86,7 +86,7 @@ Happy to proceed with order (y/n) ?
 y
 ```
 
-<img src="https://github.com/francescoFH/uberoo/blob/main/images/twilio_text.png" width="90">
+<img src="https://github.com/francescoFH/uberoo/blob/main/images/twilio_text.png" width="200">
 
 **Errors:**
 
