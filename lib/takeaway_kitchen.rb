@@ -8,13 +8,11 @@ class TakeawayKitchen
       { dish: "Toro Nigiri", price: 8 },
       { dish: "California Maki", price: 7 },
       { dish: "Matcha Mochi", price: 2 },
-      { dish: "Mango Mochi", price: 2 },
+      { dish: "Mango Mochi", price: 2 }
     ]
-
   end
 
   def menu
     @menu.dup
   end
-  
 end

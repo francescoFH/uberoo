@@ -2,7 +2,6 @@ require 'text'
 require 'time'
 
 describe Text do
-
   it 'sends a text' do
     fake_message = {
       from: '123',

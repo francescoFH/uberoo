@@ -3,7 +3,7 @@ require 'ordersystem'
 describe OrderSystem do
   let(:dish) { double :dish }
   let(:option_one) { { dish: dish, price: 3 } }
-  let(:option_two) { { dish: dish, price: 5 }}
+  let(:option_two) { { dish: dish, price: 5 } }
   let(:takeaway) { TakeawayKitchen.new.menu }
 
   it 'returns the menu from the TakeawayKitchen' do

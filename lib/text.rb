@@ -1,7 +1,6 @@
 require 'twilio-ruby'
 
 class Text
-
   attr_reader :client
 
   def initialize(account_sid = ENV['TWILIO_ACCOUNT_SID'], auth_token = ENV['TWILIO_AUTH_TOKEN'])
@@ -14,9 +13,9 @@ class Text
 
   def customer_message
     {
-    from: ENV['TWILIO_NUMBER'],
-    to: ENV['CUSTOMER_NUMBER'],
-    body: message_body
+      from: ENV['TWILIO_NUMBER'],
+      to: ENV['CUSTOMER_NUMBER'],
+      body: message_body
     }
   end
 

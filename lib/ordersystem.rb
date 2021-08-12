@@ -13,13 +13,13 @@ class OrderSystem
     menu
   end
 
-  def add_to_order(dish, quantity=1)
+  def add_to_order(dish, quantity = 1)
     fail "This isn't on the menu" if in_menu? dish
 
     order << { dish: dish, quantity: quantity, price: calculate_price(dish, quantity) }
   end
 
-  def remove_from_order(dish, quantity=1)
+  def remove_from_order(dish, quantity = 1)
     fail "The order is currently empty" if empty?
 
     fail "This isn't on the order" if in_order? dish
@@ -28,7 +28,7 @@ class OrderSystem
   end
 
   def view_order
-    order.map { |item| puts "#{item[:dish]} x #{item[:quantity]} = £#{item[:price]}"}
+    order.map { |item| puts "#{item[:dish]} x #{item[:quantity]} = £#{item[:price]}" }
   end
 
   def view_total
@@ -41,13 +41,14 @@ class OrderSystem
   end
 
   private
+
   def calculate_price(dish, quantity)
     value = menu.detect { |item| item[:dish] == dish }
     value[:price] * quantity
   end
 
   def in_order?(dish)
-    order.any? {|item| item[:dish] == dish} == false
+    order.any? { |item| item[:dish] == dish } == false
   end
 
   def in_menu?(dish)
